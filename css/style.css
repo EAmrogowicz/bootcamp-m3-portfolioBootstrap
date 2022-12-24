@@ -1,3 +1,8 @@
+/*- Spacing system
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 :root {
@@ -28,19 +33,16 @@ h4 {
   font-family: "DM Serif", serif;
 }
 
-section {
-  margin-bottom: 4.8rem;
-}
-
 /* HEADER - navigation
 -------------------------------------------------- */
 #header {
   height: 100vh;
-  background-color: var(--primaryColor);
 }
 
 .navbar {
-  padding: 0.5rem;
+  padding: 0.8rem;
+  padding-left: 3.2rem;
+  background-color: var(--primaryColor);
 }
 
 .navbar ul {
@@ -72,14 +74,16 @@ section {
 -------------------------------------------------- */
 .hero {
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   background-image: url(../img/hero-banner.avif);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 4.8rem;
+  padding: 4.8rem;
 }
 
 .hero-container {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,25 +103,17 @@ section {
   letter-spacing: 2px;
 }
 
-/* .jumbotron {
-  background-image: url(../img/hero-banner.avif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding-left: 4.8rem;
-  padding-bottom: 6.4rem;
+/* SECTION GENERAL STYLES 
+-------------------------------------------------- */
+section {
+  padding: 1rem 0;
+  margin-bottom: 4.8rem;
 }
 
-.jumboCopy {
-  width: 70%;
-  min-width: 500px;
-  max-width: 700px;
-  color: var(--accent);
-  text-align: left;
-} */
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* ABOUT ME 
 -------------------------------------------------- */

@@ -27,9 +27,12 @@
   </head>
 
   <body>
-    <header id="header" class="fixed-top">
+    <header
+      id="header"
+      class="d-flex justify-content-center align-items-center"
+    >
       <!-- Navigation bar -->
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -75,25 +78,21 @@
       </section>
     </header>
 
-    <main role="main">
+    <main id="main">
       <!-- About Me Section -->
 
-      <section class="container-fluid" id="about">
-        <div class="row m-5 d-flex align-items-center">
-          <div class="col-md-4 mb-4">
-            <img
-              src="./img/ewelinastudio-painting.jpg"
-              alt="Ewelina painting in her studio"
-              class="about-img"
-            />
+      <section class="about" id="about">
+        <div class="container-fluid">
+          <div class="section-title">
+            <h2>About me</h2>
+            <p>
+              Predominantly a landscape painter, Ewelina Amrogowicz is a Polish
+              artist currently living in London.
+            </p>
           </div>
-          <div class="col-md-8">
-            <div class="row">
-              <h2 class="heading-secondary text-uppercase fw-bold mb-4">
-                About me
-              </h2>
-            </div>
-            <p class="lead">
+        </div>
+
+        <!-- <p class="lead">
               Predominantly a landscape painter, Ewelina Amrogowicz is a Polish
               artist currently living in London. Ewelina's focus on the natural
               world is stimulated by her passion for the environment and an
@@ -108,9 +107,7 @@
 
             <button type="button" class="btn btn-outline-dark btn-cta mt-4">
               Send message
-            </button>
-          </div>
-        </div>
+            </button> -->
       </section>
 
       <!-- Potrfolio Section -->
