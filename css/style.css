@@ -96,10 +96,10 @@ h4 {
   font-size: 4.8rem;
 }
 
-.hero-container h4 {
+.hero-container h3 {
   color: var(--tint);
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
   letter-spacing: 2px;
 }
@@ -118,6 +118,7 @@ section {
 }
 
 .section-title h2 {
+  font-size: 2.4rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -129,7 +130,7 @@ section {
 
 .section-title span {
   position: absolute;
-  top: -25px;
+  top: -35px;
   left: 0;
   right: 0;
   z-index: 1;
@@ -138,7 +139,7 @@ section {
   font-family: "DM Serif", serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 2.4rem;
+  font-size: 3rem;
   letter-spacing: 8px;
 }
 
@@ -157,11 +158,31 @@ section {
   height: 24rem;
 }
 
-.about-content {
-  /* padding: 2.4rem 0 2.4rem 2.4rem; */
-}
-
 .btn-cta:hover,
 .btn-cta:active {
+  background-color: var(--accent);
+}
+
+/* SKILL SET 
+-------------------------------------------------- */
+.skill {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--shade);
+  font-weight: 700;
+}
+
+.value {
+  float: right;
+}
+
+.progress {
+  color: rgba(204, 197, 185, 0.4);
+  margin-bottom: 2.4rem;
+  height: 10px;
+}
+
+.progress-bar {
+  height: 10px;
   background-color: var(--accent);
 }
