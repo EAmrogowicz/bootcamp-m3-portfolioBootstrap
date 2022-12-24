@@ -1,0 +1,103 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+:root {
+  --primaryColor: #252422;
+  --tint: #ccc5b9;
+  --shade: #403d39;
+  --accent: #eb5e28;
+  --whiteish: #fffcf2;
+}
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: var(--primaryColor);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  margin-bottom: 4.8rem;
+}
+
+/* HEADER - navigation
+-------------------------------------------------- */
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navbar {
+  background-color: var(--shade);
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: var(--tint);
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--accent);
+}
+
+.navbar-toggler {
+  background-color: var(--tint);
+}
+
+/* HERO SECTION 
+-------------------------------------------------- */
+.jumbotron {
+  background-image: url(../img/hero-banner2.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 2.4rem);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-left: 4.8rem;
+  padding-bottom: 6.4rem;
+}
+
+.jumboCopy {
+  width: 70%;
+  min-width: 500px;
+  max-width: 700px;
+  color: var(--accent);
+  text-align: left;
+}
+
+/* ABOUT ME 
+-------------------------------------------------- */
+.about-img {
+  width: 100%;
+  box-shadow: -10px 10px 2px 0 rgba(64, 61, 57, 0.7);
+}
+
+.heading-secondary {
+  letter-spacing: 1px;
+  color: var(--shade);
+  border-left: 5px solid var(--shade);
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
+.subheading {
+  color: var(--tint);
+  margin-bottom: -0.4rem;
+}
+
+.lead {
+  font-size: 1rem;
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+  background-color: var(--accent);
+}
