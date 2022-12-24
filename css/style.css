@@ -8,18 +8,24 @@
   --whiteish: #fffcf2;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: var(--primaryColor);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Serif", serif;
 }
 
 section {
@@ -28,18 +34,29 @@ section {
 
 /* HEADER - navigation
 -------------------------------------------------- */
-.navbar-brand {
-  text-transform: uppercase;
-  font-weight: 700;
+#header {
+  height: 100vh;
+  background-color: var(--primaryColor);
 }
 
 .navbar {
-  background-color: var(--shade);
+  padding: 0.5rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .nav-link:link,
 .nav-link:visited {
-  color: var(--tint);
+  color: var(--whiteish);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .nav-link:hover,
@@ -53,11 +70,40 @@ section {
 
 /* HERO SECTION 
 -------------------------------------------------- */
-.jumbotron {
-  background-image: url(../img/hero-banner2.avif);
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/hero-banner.avif);
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 2.4rem);
+}
+
+.hero-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container h1 {
+  color: var(--whiteish);
+  font-style: italic;
+  font-size: 4.8rem;
+}
+
+.hero-container h4 {
+  color: var(--tint);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+/* .jumbotron {
+  background-image: url(../img/hero-banner.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -71,7 +117,7 @@ section {
   max-width: 700px;
   color: var(--accent);
   text-align: left;
-}
+} */
 
 /* ABOUT ME 
 -------------------------------------------------- */
