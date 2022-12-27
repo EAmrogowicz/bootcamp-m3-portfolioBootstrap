@@ -20,8 +20,7 @@
 }
 
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2.4rem;
   color: var(--primaryColor);
   font-family: "DM Sans", sans-serif;
 }
@@ -324,4 +323,111 @@ section:first-child {
   top: 0rem;
   background-color: var(--whiteish);
   border: 2px solid var(--shade);
+}
+
+/* FOOTER  
+-------------------------------------------------- */
+.footer {
+  background-image: url(../img/hero-banner.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--whiteish);
+  font-size: 1rem;
+  text-align: center;
+  padding: 6.4rem 0;
+  position: relative;
+  margin-bottom: 0;
+}
+
+/* .container-fluid {
+  position: relative;
+} */
+
+.footer h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+.footer p {
+  font-style: italic;
+  padding-bottom: 3.2rem;
+}
+
+.social-links {
+  padding-bottom: 3.2rem;
+}
+
+.contact-link {
+  font-size: 1.2rem;
+  line-height: 0rem;
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--whiteish);
+  border: 2px solid var(--accent);
+  padding: 1rem 0;
+  margin-right: 1rem;
+  border-radius: 50%;
+  text-align: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: 0.4s;
+}
+
+.contact-link:last-child {
+  margin-right: 0;
+}
+
+.contact-link:hover {
+  color: var(--shade);
+  background-color: white;
+  border: 2px solid var(--shade);
+}
+
+/* .copyright {
+  margin: 0 0 1rem 0;
+} */
+
+.copyright p {
+  font-style: normal;
+  padding: 0;
+  line-height: 1rem;
+}
+
+/* BACK TO TOP BUTTON  
+-------------------------------------------------- */
+
+.back-to-top {
+  position: absolute;
+  display: block;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  z-index: 999;
+  background-color: var(--accent);
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 0;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 2.4rem;
+  color: white;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background-color: var(--tint);
+}
+
+.back-to-top i:hover {
+  color: var(--accent);
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
 }
