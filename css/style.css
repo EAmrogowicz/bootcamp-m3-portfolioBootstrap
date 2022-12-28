@@ -33,6 +33,30 @@ h5 {
   font-family: "DM Serif", serif;
 }
 
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 /* HEADER - navigation
 -------------------------------------------------- */
 #header {
@@ -94,13 +118,11 @@ h5 {
 .hero-container h1 {
   color: var(--whiteish);
   font-style: italic;
-  font-size: 4.8rem;
 }
 
 .hero-container h3 {
   color: var(--tint);
   text-transform: uppercase;
-  font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
   letter-spacing: 2px;
 }
@@ -123,7 +145,6 @@ section:first-child {
 }
 
 .section-title h2 {
-  font-size: 2.4rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -147,6 +168,11 @@ section:first-child {
   text-transform: uppercase;
   font-size: 3rem;
   letter-spacing: 16px;
+}
+
+.section-title p {
+  text-transform: none;
+  font-size: 1.2rem;
 }
 
 .lead {
@@ -240,9 +266,9 @@ section:first-child {
 }
 
 .portfolio-title h4 {
-  font-size: 1.2rem;
   color: var(--whiteish);
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .portfolio-title p {
@@ -295,7 +321,6 @@ section:first-child {
 
 .resume-item h4 {
   color: var(--accent);
-  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -303,7 +328,6 @@ section:first-child {
 }
 
 .resume-item h5 {
-  font-size: 1rem;
   font-weight: 500;
   background-color: var(--tint);
   display: inline-block;
@@ -358,7 +382,6 @@ section:first-child {
 } */
 
 .footer h3 {
-  font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 2px;
   font-style: italic;
