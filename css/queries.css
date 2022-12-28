@@ -1,0 +1,73 @@
+/* rem and em do NOT depend on html font-size in media queries! 
+Instead, 1rem = 1em = 16px */
+
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 90%;
+  }
+
+  .hero {
+    padding: 2.4rem;
+  }
+
+  .hero-container {
+    align-items: flex-start;
+  }
+
+  section {
+    padding: 3.2rem 0.4rem 0 0.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  section:first-child {
+    padding: 2.4rem 0.4rem 0 0.4rem;
+  }
+
+  .navbar {
+    padding-left: 0.4rem;
+  }
+
+  .portfolio-title {
+    padding-bottom: 2.4rem;
+  }
+
+  .preview-link,
+  .code-link {
+    top: 40%;
+    margin-top: 1.2rem;
+  }
+
+  .preview-link {
+    left: 1rem;
+  }
+
+  .code-link {
+    left: 4.8rem;
+  }
+}
+/* BELOW 576px */
+/**************************/
+
+@media (max-width: 575px) {
+  .hero-container h1 {
+    font-size: 3.6rem;
+  }
+
+  .hero-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .section-title span {
+    font-size: 2.4rem;
+    top: -25px;
+    letter-spacing: 2px;
+  }
+}
