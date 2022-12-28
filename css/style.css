@@ -162,10 +162,16 @@ section:first-child {
   background-position: center;
   background-repeat: no-repeat;
   height: 24rem;
+  border-radius: 4px;
 }
 
 .btn {
   max-width: 24rem;
+}
+
+.btn a {
+  text-decoration: none;
+  color: var(--shade);
 }
 
 .btn-cta:hover,
@@ -212,6 +218,7 @@ section:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 12px 0 var(--tint);
 }
 
 .img-link {
