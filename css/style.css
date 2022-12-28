@@ -6,11 +6,11 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 :root {
-  --primaryColor: #252422;
-  --tint: #ccc5b9;
-  --shade: #403d39;
-  --accent: #eb5e28;
-  --whiteish: #fffcf2;
+  --primaryColor: #111;
+  --tint: #e5e5e5;
+  --shade: #14213d;
+  --accent: #fca311;
+  --whiteish: #ffffff;
 }
 
 * {
@@ -42,7 +42,7 @@ h5 {
 .navbar {
   padding: 0.8rem;
   padding-left: 3.2rem;
-  background-color: var(--primaryColor);
+  background-color: var(--shade);
 }
 
 .navbar ul {
@@ -78,6 +78,7 @@ h5 {
   background-image: url(../img/hero-banner.avif);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   margin-bottom: 4.8rem;
   padding: 4.8rem;
 }
@@ -127,6 +128,7 @@ section:first-child {
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 1rem;
+  color: var(--shade);
 
   position: relative;
   z-index: 999;
@@ -139,7 +141,7 @@ section:first-child {
   right: 0;
   z-index: 1;
 
-  color: rgba(204, 197, 185, 0.4);
+  color: var(--tint);
   font-family: "DM Serif", serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -162,6 +164,10 @@ section:first-child {
   height: 24rem;
 }
 
+.btn {
+  max-width: 24rem;
+}
+
 .btn-cta:hover,
 .btn-cta:active {
   background-color: var(--accent);
@@ -181,7 +187,7 @@ section:first-child {
 }
 
 .progress {
-  color: rgba(204, 197, 185, 0.4);
+  color: var(--tint);
   margin-bottom: 2.4rem;
   height: 10px;
 }
@@ -222,7 +228,7 @@ section:first-child {
   left: 12px;
   right: 12px;
 
-  background-color: rgba(37, 36, 34, 0.8);
+  background-color: rgba(20, 33, 61, 0.8);
   padding: 1rem;
 }
 
@@ -292,7 +298,7 @@ section:first-child {
 .resume-item h5 {
   font-size: 1rem;
   font-weight: 500;
-  background-color: rgba(204, 197, 185, 0.4);
+  background-color: var(--tint);
   display: inline-block;
   padding: 0.2rem 1rem;
 }
@@ -302,7 +308,7 @@ section:first-child {
 }
 
 .resume-item ul {
-  padding-left: 1.2rem;
+  padding-left: 1rem;
 }
 
 .resume-item ul li {
@@ -382,7 +388,7 @@ section:first-child {
 
 .contact-link:hover {
   color: var(--shade);
-  background-color: white;
+  background-color: var(--whiteish);
   border: 2px solid var(--shade);
 }
 
@@ -415,7 +421,7 @@ section:first-child {
 
 .back-to-top i {
   font-size: 2.4rem;
-  color: white;
+  color: var(--whiteish);
   line-height: 0;
 }
 
